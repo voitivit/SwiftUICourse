@@ -12,7 +12,8 @@ struct swiftUICourseApp: App {
     var body: some Scene {
         WindowGroup {
            // ContentView()
-            Chat()
+           AppView()
+          
         }
     }
 }
