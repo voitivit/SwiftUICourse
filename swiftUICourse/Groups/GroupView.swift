@@ -6,21 +6,20 @@
 //
 
 import SwiftUI
-struct GroupView: View {
-    private var groups: [Group] = [
-    Group(name: "Гугль", description: "Закрытая группа", imageName: "google", count: "3 подписчика")
-    ]
-    var body: some View {
-            List(groups) { group in
-                    GroupRowView(group: group)
-            }
-            .modifier(PlainList())
-            .navigationBarTitle("Группы", displayMode: .inline)
+struct GroupsView: View {
+    @ObservedObject var viewModel: GroupViewModel
+    
+    init(viewModel: GroupViewModel) {
+        self.viewModel = viewModel
     }
-}
-
-struct GroupsView_Previews: PreviewProvider {
-    static var previews: some View {
-        GroupView()
+    
+    var body: some View {
+        List(viewModel.groups) { group in
+            NavigationLink(destination: GroupPageView(group: group)) {
+                GroupRowView(group: group)
+            }
+        }
+        .modifier(PlainList())
+        .onAppear { viewModel.fetch() }
     }
 }

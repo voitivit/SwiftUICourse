@@ -6,10 +6,18 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct FriendPhotoView: View {
-    var friend: Friend
+    var friend: FriendItem
     var body: some View {
-        Image(friend.imageName)
+        VStack {
+            AvatarImage { KFImage(URL(string: friend.photo100!)!) }
+            
+            Text("\(friend.firstName) \(friend.lastName)")
+                .modifier(TitleText())
+            
+            Spacer()
+        }.padding()
     }
 }

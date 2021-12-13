@@ -5,18 +5,19 @@
 //  Created by emil kurbanov on 13.12.2021.
 //
 
-import Foundation
-class Friend: Identifiable {
-    internal init(name: String, imageName: String, lastSeen: String, isOnline: Bool = false) {
-        self.name = name
-        self.imageName = imageName
-        self.lastSeen = lastSeen
-        self.isOnline = isOnline
+import SwiftUI
+class Friend: ObservableObject {
+    @Published var friends: [FriendItem] = []
+    let api: FriendService
+    
+    init(_ api: FriendService) {
+        self.api = api
     }
     
-    let id: UUID = UUID()
-    let name: String
-    let imageName: String
-    let lastSeen: String
-    let isOnline: Bool
+    public func fetch() {
+        api.get { [weak self] friends in
+            guard let self = self else { return }
+            self.friends = friends!.response.items
+        }
+    }
 }

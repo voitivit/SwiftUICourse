@@ -8,7 +8,8 @@
 import SwiftUI
 struct News: View {
     var body: some View {
-        Text("Новостей пока нет").navigationBarTitle("ВК-клиент", displayMode: .inline)
+        Text("Новостей пока нет")
+            //.navigationBarTitle("VK", displayMode: .inline)
     }
 }
 

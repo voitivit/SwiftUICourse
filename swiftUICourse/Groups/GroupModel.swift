@@ -5,18 +5,21 @@
 //  Created by emil kurbanov on 09.12.2021.
 //
 
-import Foundation
-class Group: Identifiable {
-    internal init(name: String, description: String, imageName: String, count: String) {
-        self.name = name
-        self.description = description
-        self.imageName = imageName
-        self.count = count
+import SwiftUI
+
+class GroupViewModel: ObservableObject {
+    @Published var groups: [GroupItem] = []
+    let api: GroupService
+    
+    init(_ api: GroupService) {
+        self.api = api
     }
     
-    let id: UUID = UUID()
-    let name: String
-    let description: String
-    let imageName: String
-    let count: String
+    public func fetch() {
+        api.get { [weak self] groups in
+            guard let self = self else { return }
+            self.groups = groups!.response.items
+        }
+    }
 }
+
