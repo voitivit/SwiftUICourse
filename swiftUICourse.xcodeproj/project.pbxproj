@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		F7203976276120E200C19887 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7203975276120E200C19887 /* AppView.swift */; };
+		F73DAF4C276B5C5700585CC2 /* CodyngStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DAF4B276B5C5700585CC2 /* CodyngStyle.swift */; };
+		F78C43A1277084AD007C8FED /* AvatarTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78C43A0277084AD007C8FED /* AvatarTap.swift */; };
+		F78C43A327708A16007C8FED /* LikeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78C43A227708A16007C8FED /* LikeModel.swift */; };
+		F78C43A627708A46007C8FED /* LikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78C43A527708A46007C8FED /* LikeView.swift */; };
 		F7C61C10276741BC00E0D493 /* FriendsModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C61C0F276741BC00E0D493 /* FriendsModelView.swift */; };
 		F7C61C122767431100E0D493 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C61C112767431100E0D493 /* Session.swift */; };
 		F7C61C152767436200E0D493 /* Groups.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C61C142767436200E0D493 /* Groups.swift */; };
@@ -16,7 +20,7 @@
 		F7C61C1E2767443300E0D493 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F7C61C1D2767443300E0D493 /* Kingfisher */; };
 		F7C61C202767445700E0D493 /* GroupsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C61C1F2767445700E0D493 /* GroupsAPI.swift */; };
 		F7C61C222767446400E0D493 /* FriendsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C61C212767446400E0D493 /* FriendsAPI.swift */; };
-		F7C61C25276744CE00E0D493 /* AvaImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C61C24276744CE00E0D493 /* AvaImage.swift */; };
+		F7C61C25276744CE00E0D493 /* AvatarImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C61C24276744CE00E0D493 /* AvatarImage.swift */; };
 		F7C61C28276747FA00E0D493 /* GroupPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C61C27276747FA00E0D493 /* GroupPage.swift */; };
 		F7C61C2A2767489300E0D493 /* ExtensionDateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C61C292767489300E0D493 /* ExtensionDateTime.swift */; };
 		F7C61C2D276749B100E0D493 /* VKWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C61C2C276749B100E0D493 /* VKWebView.swift */; };
@@ -40,13 +44,17 @@
 
 /* Begin PBXFileReference section */
 		F7203975276120E200C19887 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		F73DAF4B276B5C5700585CC2 /* CodyngStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodyngStyle.swift; sourceTree = "<group>"; };
+		F78C43A0277084AD007C8FED /* AvatarTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarTap.swift; sourceTree = "<group>"; };
+		F78C43A227708A16007C8FED /* LikeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeModel.swift; sourceTree = "<group>"; };
+		F78C43A527708A46007C8FED /* LikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeView.swift; sourceTree = "<group>"; };
 		F7C61C0F276741BC00E0D493 /* FriendsModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsModelView.swift; sourceTree = "<group>"; };
 		F7C61C112767431100E0D493 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		F7C61C142767436200E0D493 /* Groups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Groups.swift; sourceTree = "<group>"; };
 		F7C61C172767437E00E0D493 /* Friends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
 		F7C61C1F2767445700E0D493 /* GroupsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsAPI.swift; sourceTree = "<group>"; };
 		F7C61C212767446400E0D493 /* FriendsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsAPI.swift; sourceTree = "<group>"; };
-		F7C61C24276744CE00E0D493 /* AvaImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvaImage.swift; sourceTree = "<group>"; };
+		F7C61C24276744CE00E0D493 /* AvatarImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImage.swift; sourceTree = "<group>"; };
 		F7C61C27276747FA00E0D493 /* GroupPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupPage.swift; sourceTree = "<group>"; };
 		F7C61C292767489300E0D493 /* ExtensionDateTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDateTime.swift; sourceTree = "<group>"; };
 		F7C61C2C276749B100E0D493 /* VKWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKWebView.swift; sourceTree = "<group>"; };
@@ -82,6 +90,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F73DAF85276B647400585CC2 /* CodingStyle */ = {
+			isa = PBXGroup;
+			children = (
+				F73DAF4B276B5C5700585CC2 /* CodyngStyle.swift */,
+			);
+			path = CodingStyle;
+			sourceTree = "<group>";
+		};
+		F78C43A427708A2A007C8FED /* Like */ = {
+			isa = PBXGroup;
+			children = (
+				F78C43A227708A16007C8FED /* LikeModel.swift */,
+				F78C43A527708A46007C8FED /* LikeView.swift */,
+			);
+			path = Like;
+			sourceTree = "<group>";
+		};
 		F7B6E86427675105000E6845 /* LoginView */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,7 +161,8 @@
 		F7C61C26276744EA00E0D493 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				F7C61C24276744CE00E0D493 /* AvaImage.swift */,
+				F7C61C24276744CE00E0D493 /* AvatarImage.swift */,
+				F78C43A0277084AD007C8FED /* AvatarTap.swift */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -169,9 +195,11 @@
 			isa = PBXGroup;
 			children = (
 				F7D9120B2750E90C00E0D565 /* swiftUICourseApp.swift */,
+				F73DAF85276B647400585CC2 /* CodingStyle */,
 				F7B6E86427675105000E6845 /* LoginView */,
 				F7B6E86527675144000E6845 /* SettingWebView */,
 				F7B6E86627675308000E6845 /* MainView */,
+				F78C43A427708A2A007C8FED /* Like */,
 				F7C61C26276744EA00E0D493 /* Images */,
 				F7C61C232767449200E0D493 /* Services */,
 				F7C61C132767431600E0D493 /* Session */,
@@ -323,7 +351,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7C61C182767437F00E0D493 /* Friends.swift in Sources */,
+				F78C43A1277084AD007C8FED /* AvatarTap.swift in Sources */,
 				F7F0470A27621D9100DC3B2C /* GroupRows.swift in Sources */,
+				F78C43A627708A46007C8FED /* LikeView.swift in Sources */,
 				F7C61C122767431100E0D493 /* Session.swift in Sources */,
 				F7203976276120E200C19887 /* AppView.swift in Sources */,
 				F7F0470827621D5D00DC3B2C /* GroupModel.swift in Sources */,
@@ -332,7 +362,8 @@
 				F7D9120E2750E90C00E0D565 /* LoginView.swift in Sources */,
 				F7C61C202767445700E0D493 /* GroupsAPI.swift in Sources */,
 				F7F046F727620BED00DC3B2C /* FriendsPhoto.swift in Sources */,
-				F7C61C25276744CE00E0D493 /* AvaImage.swift in Sources */,
+				F7C61C25276744CE00E0D493 /* AvatarImage.swift in Sources */,
+				F78C43A327708A16007C8FED /* LikeModel.swift in Sources */,
 				F7F046F52761EC0700DC3B2C /* UserView.swift in Sources */,
 				F7C61C2A2767489300E0D493 /* ExtensionDateTime.swift in Sources */,
 				F7C61C10276741BC00E0D493 /* FriendsModelView.swift in Sources */,
@@ -345,6 +376,7 @@
 				F7C61C28276747FA00E0D493 /* GroupPage.swift in Sources */,
 				F7F046FE27620C7600DC3B2C /* Avatars.swift in Sources */,
 				F7C61C152767436200E0D493 /* Groups.swift in Sources */,
+				F73DAF4C276B5C5700585CC2 /* CodyngStyle.swift in Sources */,
 				F7F0470627621CE500DC3B2C /* News.swift in Sources */,
 				F7D9120C2750E90C00E0D565 /* swiftUICourseApp.swift in Sources */,
 			);

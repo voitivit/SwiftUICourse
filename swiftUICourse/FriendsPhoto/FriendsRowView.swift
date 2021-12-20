@@ -14,8 +14,9 @@ struct FriendRowView: View {
         HStack {
             AvatarImage {
                 KFImage(URL(string: friend.photo100!)!)
+                  
             }
-            
+           // .avatarTap()
             VStack(alignment: .leading) {
                 Text("\(friend.firstName) \(friend.lastName)")
                     .lineLimit(1)

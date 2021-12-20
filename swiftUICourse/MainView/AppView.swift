@@ -10,6 +10,7 @@ import SwiftUI
 struct AppView: View {
     @ObservedObject var session = Session.instance
 
+
     var body: some View {
         NavigationView {
             HStack {
