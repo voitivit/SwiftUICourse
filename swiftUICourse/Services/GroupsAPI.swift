@@ -37,7 +37,9 @@ class GroupAPI: GroupService {
             do {
                 var groups: Groups
                 groups = try JSONDecoder().decode(Groups.self, from: data)
-                completion(groups)
+                DispatchQueue.main.async {
+                    completion(groups)
+                }
             } catch {
                 print(error)
             }

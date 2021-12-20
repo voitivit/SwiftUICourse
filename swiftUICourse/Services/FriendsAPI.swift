@@ -40,7 +40,9 @@ class FriendAPI: FriendService {
             do {
                 var friends: Friends
                 friends = try JSONDecoder().decode(Friends.self, from: data)
-                completion(friends)
+                DispatchQueue.main.async {
+                    completion(friends)
+                }
             } catch {
                 print(error)
             }
