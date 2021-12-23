@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F7203976276120E200C19887 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7203975276120E200C19887 /* AppView.swift */; };
+		F72F7EFE2774866100EF5641 /* MainUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F7EFD2774866100EF5641 /* MainUIKit.swift */; };
+		F72F7F00277486E000EF5641 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F7EFF277486E000EF5641 /* MainCoordinator.swift */; };
 		F73DAF4C276B5C5700585CC2 /* CodyngStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DAF4B276B5C5700585CC2 /* CodyngStyle.swift */; };
 		F78C43A1277084AD007C8FED /* AvatarTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78C43A0277084AD007C8FED /* AvatarTap.swift */; };
 		F78C43A327708A16007C8FED /* LikeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78C43A227708A16007C8FED /* LikeModel.swift */; };
@@ -44,6 +46,8 @@
 
 /* Begin PBXFileReference section */
 		F7203975276120E200C19887 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		F72F7EFD2774866100EF5641 /* MainUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUIKit.swift; sourceTree = "<group>"; };
+		F72F7EFF277486E000EF5641 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		F73DAF4B276B5C5700585CC2 /* CodyngStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodyngStyle.swift; sourceTree = "<group>"; };
 		F78C43A0277084AD007C8FED /* AvatarTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarTap.swift; sourceTree = "<group>"; };
 		F78C43A227708A16007C8FED /* LikeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeModel.swift; sourceTree = "<group>"; };
@@ -126,8 +130,11 @@
 		F7B6E86627675308000E6845 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
+				F7D9120B2750E90C00E0D565 /* swiftUICourseApp.swift */,
 				F7203975276120E200C19887 /* AppView.swift */,
+				F72F7EFD2774866100EF5641 /* MainUIKit.swift */,
 				F7F0470B27621DE900DC3B2C /* TabBar.swift */,
+				F72F7EFF277486E000EF5641 /* MainCoordinator.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -194,7 +201,6 @@
 		F7D9120A2750E90C00E0D565 /* swiftUICourse */ = {
 			isa = PBXGroup;
 			children = (
-				F7D9120B2750E90C00E0D565 /* swiftUICourseApp.swift */,
 				F73DAF85276B647400585CC2 /* CodingStyle */,
 				F7B6E86427675105000E6845 /* LoginView */,
 				F7B6E86527675144000E6845 /* SettingWebView */,
@@ -353,6 +359,7 @@
 				F7C61C182767437F00E0D493 /* Friends.swift in Sources */,
 				F78C43A1277084AD007C8FED /* AvatarTap.swift in Sources */,
 				F7F0470A27621D9100DC3B2C /* GroupRows.swift in Sources */,
+				F72F7EFE2774866100EF5641 /* MainUIKit.swift in Sources */,
 				F78C43A627708A46007C8FED /* LikeView.swift in Sources */,
 				F7C61C122767431100E0D493 /* Session.swift in Sources */,
 				F7203976276120E200C19887 /* AppView.swift in Sources */,
@@ -369,6 +376,7 @@
 				F7C61C10276741BC00E0D493 /* FriendsModelView.swift in Sources */,
 				F7F0470027620CD800DC3B2C /* SettingsView.swift in Sources */,
 				F7F046FC27620C3B00DC3B2C /* FriendsRowView.swift in Sources */,
+				F72F7F00277486E000EF5641 /* MainCoordinator.swift in Sources */,
 				F7FC8A28275E090C001EB126 /* Chat.swift in Sources */,
 				F7F0470227621B4A00DC3B2C /* FriendsView.swift in Sources */,
 				F7C61C222767446400E0D493 /* FriendsAPI.swift in Sources */,
