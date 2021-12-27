@@ -14,6 +14,7 @@ struct GroupRowView: View {
         HStack {
             AvatarImage {
                 KFImage(URL(string: group.imageURL)!)
+             
             }
             
             VStack(alignment: .leading) {

@@ -17,16 +17,18 @@ struct AvatarImage: View {
     }
  
     var body: some View {
-        content
-            .resizable()
-            .aspectRatio(contentMode: .fit)
-            .frame(width: 100, height: 100)
-            .clipShape(Circle())
-            .avatarTap()
-            .onTapGesture {
-                
-                self.isAnimationOn.toggle()
-            }
+        
+            content
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 45, height: 45, alignment: .center)
+                .clipShape(Circle())
+                .avatarTap()
+                .onTapGesture {
+                    
+                    self.isAnimationOn.toggle()
+                }
+
     }
     
     
